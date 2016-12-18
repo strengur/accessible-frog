@@ -8,6 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   color: #3A6355;
   background: #2d2b30;
 }
@@ -23,7 +24,75 @@ a:hover {
   color: #999;
 }
 
+/* Font Styles */
+p, td, .survey-member-name {
+  color: #fefeff;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4, th, button {
+  /*margin: 1.414em 0 0.5em;*/
+  font-weight: inherit;
+  /*line-height: 1.2;*/
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3, th {
+  font-size: 1.999em;
+  color: #BCBCA9;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+/* Buttons and forms styling */
+.button {
+  padding: 7px;
+}
+
+.button,
+input[type="text"],
+input[type="email"],
+textarea {
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+#albums:focus,
+.button:focus {
+    box-shadow: 0px 0px 5px 3px #FCF390;
+    outline: none;
+    border: 1px solid #96731A;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+#albums,
+.button {
+  transition: all .3s;
+}
+
 /* Section Styles */
+.title-away {
+  position: absolute;
+  left: -2000px;
+}
 
 .main-nav {
   width: 100%;
@@ -54,12 +123,22 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 
-.nav a {
+.nav a,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+#albums:focus,
+.button:focus {
   transition: all .5s;
 }
 
 .nav a:hover {
   color: white
+}
+
+a.menu {
+  background: #FCF390;
+  color: #2d2b30;
 }
 
 header {
@@ -77,13 +156,14 @@ header {
   letter-spacing: 5px;
 }
 
-.name{
+.name {
   font-weight: 300;
 }
 
-header .name{
+header .name {
   font-size: 3em;
 }
+
 .tagline {
   font-weight: 600;
   padding: 20px;
@@ -102,7 +182,6 @@ header .name{
   border-color: #96731A;
 }
 
-
 .photo{
   display: block;
   width: 200px;
@@ -118,10 +197,16 @@ header .name{
 }
 
 .heading{
-  font-size: 2em;
+  /*font-size: 2em;*/
   text-transform: uppercase;
-  color: #781125;
-  margin-top: 10px;
+  color: #C7B59F;
+  margin-top: 4px;
+}
+
+.buy {
+  background: #96731A;
+  color: #fefeff;
+  font-weight: 300;
 }
 
 /* Footer styles */
