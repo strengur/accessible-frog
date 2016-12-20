@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: #999;
+  color: #FFF;
 }
 
 /* Font Styles */
@@ -61,6 +61,11 @@ h4 {
 .button {
   padding: 7px;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fcf390;
+  color: #2d2b30;
 }
 
 .button,
@@ -134,8 +139,13 @@ textarea:focus,
 }
 
 .nav a:hover {
-  color: #000;
+  color: #FFF;
+  background: #96731a;
   cursor: pointer;
+}
+
+li.name a:hover {
+  background: rgba(0,0,0,0);
 }
 
 a.menu {
@@ -145,11 +155,29 @@ a.menu {
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
+}
+
+h1.header-text,
+h3.header-sub-text {
+  position: relative;
+  top: 76px;
+  font-weight: 600;
+}
+
+h1.header-text {
+  margin-bottom: 25px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+h3.header-sub-text {
+  margin: 0;
+  color: #781328;
 }
 
 .tag {
@@ -244,7 +272,7 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
+/*a.twitter {
   background-image: url(../img/twitter-32.png);
 }
 
@@ -254,7 +282,7 @@ a.youtube {
 
 a.spotify {
   background-image: url(../img/spotify-32.png);
-}
+}*/
 
 a.social:hover {
   opacity: 1;

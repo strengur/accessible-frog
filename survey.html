@@ -30,29 +30,38 @@
           <img class="photo" src= "img/concert01.jpg" alt="Photo showing the band from crowd point of view.">
           <div class="container">
             <form class = "survey">
-              <h3>Who is your favorite band member:</h3>
-              <input type="radio" name="res" value="John"><span class="survey-member-name">John</span>
-              <input type="radio" name="res" value="Hazzard"><span class="survey-member-name">Hazzard</span>
-              <input type="radio" name="res" value="Bob"><span class="survey-member-name">Bob</span>
-              <input type="radio" name="res" value="Sally"><span class="survey-member-name">Sally</span>
+              <fieldset class="survey-fieldset">
+                <legend><span>Band Memeber</span></legend>
+                <h3>Who is your favorite band member:</h3>
+                <input type="radio" id="john" name="res" value="John"><span class="survey-member-name"><label for="john">John</label></span>
+                <input type="radio" id="hazzard" name="res" value="Hazzard"><span class="survey-member-name"><label for="hazzard">Hazzard</label></span>
+                <input type="radio" id="bob" name="res" value="Bob"><span class="survey-member-name"><label for="bob">Bob</label></span>
+                <input type="radio" id="sally" name="res" value="Sally"><span class="survey-member-name"><label for="sally">Sally</label></span>
+              </fieldset>
 
-              <h3>What is your favorite album:</h3>
-              <select id="albums" name="select">
-                <option value="1">Party For An Angel</option>
-                <option value="2">A Day Of Old</option>
-                <option value="3">Finding My Shadow</option>
-                <option value="4">Diamond Fireworks</option>
-                <option value="5">Enjoy Your Desire</option>
-                <option value="6">This Is For You</option>
-                <option value="7">Music Of My Life</option>
-                <option value="8">Song For Yesterday</option>
-                <option value="9">Heroic Forever</option>
-                <option value="10">Midnight Fires</option>
-                <option value="11">Street Of The Rider</option>
-              </select>
+              <fieldset class="survey-fieldset">
+                <legend><span>Favorite Album</span></legend>
+                <h3>What is your favorite album:</h3>
+                <select id="albums" name="select">
+                  <option value="1">A Day Of Old</option>
+                  <option value="2">Diamond Fireworks</option>
+                  <option value="3">Enjoy Your Desire</option>
+                  <option value="4">Finding My Shadow</option>
+                  <option value="5">Heroic Forever</option>
+                  <option value="6">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="8">Party For An Angel</option>
+                  <option value="9">Song For Yesterday</option>
+                  <option value="10">Street Of The Rider</option>
+                  <option value="11">This Is For You</option>
+                </select>
+              </fieldset>
 
-              <h3>What is your favorite song:</h3>
-              <textarea></textarea>
+              <fieldset class="survey-fieldset">
+                <legend><span>Favorite Song</span></legend>
+                <h3>What is your favorite song:</h3>
+                <textarea></textarea>
+            </fieldset>
             </form>
           </div>
         </div>
@@ -63,10 +72,14 @@
           <img class="photo" src= "img/the_band.jpg" alt="Photo of the drummer and guitarist.">
             <div class="container">
               <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
+                <fieldset class="survey-fieldset">
+                  <legend><span>Sign-Up Form</span></legend>
+                  <h3 class="heading">Sign up for our newsletter</h3>
+                  <p><label for="name">Name:</lable><input type="text" id="name" name="textfield"></p>
+                  <p><label for="email">Email:</label><input type="email" id="email" name="textfield"></p>
+                  <p><label for="re-email">Retype Email:</label><input type="email" id="re-email" name="textfield"></p>
                   <button class="button buy" type="submit">Sign Up</button>
+                </fieldset>
               </form>
             </div>
         </div>
