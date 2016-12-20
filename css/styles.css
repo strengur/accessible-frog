@@ -155,7 +155,7 @@ a.menu {
 
 header {
   text-align: center;
-  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center #f3f3f3;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -163,7 +163,7 @@ header {
 }
 
 h1.header-text,
-h3.header-sub-text {
+h2.header-sub-text {
   position: relative;
   top: 76px;
   font-weight: 600;
@@ -175,7 +175,8 @@ h1.header-text {
   text-transform: uppercase;
 }
 
-h3.header-sub-text {
+h2.header-sub-text {
+  font-size: 2.07em;
   margin: 0;
   color: #781328;
 }
@@ -217,6 +218,7 @@ header .name {
   width: 200px;
   height: 0%;
   margin: 0 auto;
+  color: #fff;
 }
 
 .information{
