@@ -46,6 +46,7 @@ input[type="email"] {
 textarea {
   padding: 10px 5px 0px;
   line-height: 0.55em;
+  margin-bottom: -9px;
 }
 
 .container{
@@ -89,7 +90,7 @@ button {
 @media screen and  (min-width: 480px) {
   .survey-member-name {
     margin-left: 0px;
-    bottom: 2px;
+    bottom: -2px;
   }
 
   label {
@@ -119,7 +120,7 @@ button {
   }
 
   .survey-fieldset {
-    width: 461px;
+    max-width: 461px;
   }
 
   .survey-fieldset span {
@@ -128,6 +129,7 @@ button {
 
   textarea {
     padding: 12px 5px 0px;
+    margin-bottom: -10px;
   }
 
   .survey-fieldset span {
