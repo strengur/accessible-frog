@@ -11,6 +11,10 @@ form {
   display: inline-block;
 }
 
+label {
+  display: block;
+}
+
 .survey-member-name,
 .newsletter p,
 button,
@@ -18,25 +22,30 @@ input[type="text"],
 input[type="email"],
 textarea,
 select#albums {
-  font-size: 1.125em;
+  font-size: 0.85em;
+}
+
+h3 {
+  font-size: 1.199em;
 }
 
 .survey-member-name {
-  margin-left: 3px;
+  margin-left: 0px;
   margin-right: 9px;
   position: relative;
-  bottom: -2px;
+  bottom: 2px;
+  display: inline-block;
 }
 
 select#albums,
 input[type="text"],
 input[type="email"] {
-  height: 35px;
+  height: 25px;
 }
 
 textarea {
-  padding: 12px 5px 0px;
-  line-height: 0.65em;
+  padding: 10px 5px 0px;
+  line-height: 0.55em;
 }
 
 .container{
@@ -55,15 +64,15 @@ textarea {
 }
 
 .survey-fieldset span {
-  font-size: 1.125em;
-  color: #fff;
-  padding: 0 5px;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 0 0px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 265px;
+    width: 245px;
 }
 
 input[type="text"],
@@ -77,8 +86,51 @@ button {
 }
 
 /* Styles for larger screens */
-@media screen and (min-width: 840px) {
+@media screen and  (min-width: 480px) {
+  .survey-member-name {
+    margin-left: 0px;
+    bottom: 2px;
+  }
+
+  label {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .photo{
     width: 40%;
+  }
+
+  select#albums,
+  input[type="text"],
+  input[type="email"] {
+    height: 35px;
+  }
+
+  .survey-member-name,
+  .newsletter p,
+  button,
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select#albums {
+    font-size: 1.125em;
+  }
+
+  .survey-fieldset {
+    width: 461px;
+  }
+
+  .survey-fieldset span {
+    padding: 0 5px;
+  }
+
+  textarea {
+    padding: 12px 5px 0px;
+  }
+
+  .survey-fieldset span {
+    font-size: 1.125em;
   }
 }
