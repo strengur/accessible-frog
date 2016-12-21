@@ -1,6 +1,6 @@
 /* Tour page styles */
 
-pre,
+.pre,
 caption {
   font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +17,7 @@ caption {
 }
 
 /* Table styles */
-pre {
+.pre {
   width: 270px;
   margin: 0 auto;
 }
@@ -44,7 +44,7 @@ caption {
 }
 
 @media screen and (min-width: 480px) {
-  pre {
+  .pre {
     width: 420px;
     margin: 40px auto 0;
   }
@@ -63,7 +63,7 @@ caption {
 }
 
 @media screen and (min-width: 768px) {
-  pre {
+  .pre {
     width: 540px;
     margin: 0 auto;
   }

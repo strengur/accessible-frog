@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div role="navigation" class="main-nav">
       <h1 class="title-away">Accessible Frog - Tour</h1>
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
 
-    <header>
+    <header role="banner">
       <h1 class="header-text">Accessible Frog</h1>
       <h2 class="header-sub-text">we make awesome music</h2>
     </header>
@@ -33,14 +33,14 @@
       <img class="pick" src= "img/guitar_pick.png" alt="">
       <div class="card">
         <div class="flex">
-          <pre>
-            <table id="tour">
+          <div class="pre">
+            <table role="contentinfo" aria-label="Tour dates, venues and locations" id="tour">
               <caption>Tour Dates</caption>
               <tbody>
                 <tr>
-                  <th scope="col">Date</th>
-                  <th scope="col">Venue</th>
-                  <th scope="col">Location</th>
+                  <th role="contentinfo" aria-label="Tour dates" scope="col">Date</th>
+                  <th role="contentinfo" aria-label="Tour venues" scope="col">Venue</th>
+                  <th role="contentinfo" aria-label="Tour locations" scope="col">Location</th>
                 </tr>
 
                 <tr>
@@ -68,18 +68,18 @@
                 </tr>
               </tbody>
             </table>
-          </pre>
+          <div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-lable="Footer content">
       <ul>
         <li><a href="#" class="social twitter"><span class="connect-with-us">Follow us on Twitter.</span><img src= "img/twitter-32.png" alt="Image of the Twitter icon."></a></li>
         <li><a href="#" class="social youtube"><span class="connect-with-us">Watch us on YouTube.</span><img src= "img/youtube-32.png" alt="Image of the YouTube icon."></a></li>
         <li><a href="#" class="social spotify"><span class="connect-with-us">Listen to our music on Spotify.</span><img src= "img/spotify-32.png" alt="Image of the Spotify icon."></a></li>
       </ul>
-      <p class="copyright">Copyright 2016, Accessible Frog</p>
+      <p role="contentinfo" aria-label="Copyright info" class="copyright">Copyright 2016, Accessible Frog</p>
     </footer>
   </body>
 </html>
