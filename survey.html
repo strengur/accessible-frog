@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div role="navigation" class="main-nav">
+    <div role="navigation" aria-label="Main menu" class="main-nav">
       <h1 class="title-away">Accessible Frog - Survey</h1>
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
 
-    <header role="banner">
+    <header>
       <h1 class="header-text">Accessible Frog</h1>
       <h2 class="header-sub-text">we make awesome music</h2>
     </header>
@@ -31,9 +31,9 @@
         <div class="flex">
           <img class="photo" src="img/concert01.jpg" alt="Photo showing the band from crowd point of view.">
           <div class="container">
-            <form role="form" aria-lable="Survey form" class="survey">
+            <form class="survey">
               <fieldset role="contentinfo" aria-label="Favorite band member survey" class="survey-fieldset">
-                <legend><span>Band Memeber</span></legend>
+                <legend><span>Band Member</span></legend>
                 <h3>Who is your favorite band&nbsp;member:</h3>
                 <input type="radio" id="john" name="res" value="John"><span class="survey-member-name"><label for="john">John</label></span>
                 <input type="radio" id="hazzard" name="res" value="Hazzard"><span class="survey-member-name"><label for="hazzard">Hazzard</label></span>
@@ -88,7 +88,7 @@
       </div>
     </main>
 
-    <footer role="contentinfo" aria-lable="Footer content">
+    <footer>
       <ul>
         <li><a href="#" class="social twitter"><span class="connect-with-us">Follow us on Twitter.</span><img src="img/twitter-32.png" alt="Image of the Twitter icon."></a></li>
         <li><a href="#" class="social youtube"><span class="connect-with-us">Watch us on YouTube.</span><img src="img/youtube-32.png" alt="Image of the YouTube icon."></a></li>

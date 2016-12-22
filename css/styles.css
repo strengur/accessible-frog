@@ -161,12 +161,14 @@ a.menu {
 }
 
 header {
+  position: relative;
   text-align: center;
   background: url('../img/concert02_no_text.jpg') no-repeat top center #f3f3f3;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
+  z-index: -1;
 }
 
 h1.header-text,
@@ -202,6 +204,10 @@ h2.header-sub-text {
 
 header .name {
   font-size: 3em;
+}
+
+main {
+  padding-top: 50px;
 }
 
 .tagline {

@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div role="navigation" class="main-nav">
+    <div role="navigation" aria-label="Main menu" class="main-nav">
       <!-- <h1 class="title-away">Accessible Frog - Home</h1> -->
       <ul class="nav">
         <li class="name"><a href="#">Accessible Frog</a></li>
@@ -21,7 +21,7 @@
       </ul>
     </div>
 
-    <header role="banner">
+    <header>
       <h1 class="header-text">Accessible Frog</h1>
       <h2 class="header-sub-text">we make awesome music</h2>
     </header>
@@ -30,12 +30,12 @@
       <div class="card">
         <div class="flex">
           <img class="photo" src="img/soul_of_the_frog.jpg" alt="Album cover photo of the new CD, Soul of the Frog.">
-          <div class="information">
+          <div role="contentinfo" aria-label="Information about the new album" class="information">
             <h2 class="heading">New album out now</h2>
             <h3>Soul of the Frog</h3>
             <p>Digital/CD/ 2 x LP</p>
-            <a href="#" area-describedby="purchase" class="button buy">Purchase Album</a>
-            <p id="purchase">Click this button to puchase our great new album</p>
+            <a href="#" aria-describedby="purchase" class="button buy">Purchase Album</a>
+            <p id="purchase">Click this button to purchase our great new album</p>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
       <div class="card">
         <div class="flex">
           <img class="photo" src="img/lead_singer.jpg" alt="Photo of the singer on stage singing one of the songs you can find on our new album.">
-          <div class="information">
+          <div role="contentinfo" aria-label="Information about the band" class="information">
             <h2 class="heading">About the band</h2>
             <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
           </div>
@@ -51,7 +51,7 @@
       </div>
     </main>
 
-    <footer role="contentinfo" aria-lable="Footer content">
+    <footer>
       <ul>
         <li><a href="#" class="social twitter"><span class="connect-with-us">Follow us on Twitter.</span><img src="img/twitter-32.png" alt="Image of the Twitter icon."></a></li>
         <li><a href="#" class="social youtube"><span class="connect-with-us">Watch us on YouTube.</span><img src="img/youtube-32.png" alt="Image of the YouTube icon."></a></li>
